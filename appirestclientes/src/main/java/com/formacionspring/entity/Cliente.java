@@ -31,7 +31,9 @@ public class Cliente implements Serializable{
 	//para cambiar nombre de las columnas
 	@Column(name="create_at")
 	private Date createAt;
-
+	
+	//para poder guardar las imagenes
+	private String imagen;
 	
 	public long getId() {
 		return id;
@@ -69,6 +71,15 @@ public class Cliente implements Serializable{
 	public void setCreateAt(Date createAt) {
 		this.createAt = createAt;
 	}
+	
+	public String getImagen() {
+		return imagen;
+	}
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
+	}
+
+
 	/**
 	 * 
 	 */
